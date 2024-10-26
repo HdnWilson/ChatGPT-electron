@@ -1,20 +1,29 @@
-# ChatGPT Electron
+# AI Assistant Electron
 
 ![sample](sample.png)
+
+## Features
+
+1. #### Session manager to change account easily,
+2. #### Streamer mode to hide your name, mail and avatar
+3. #### Change assistant (GPT, Copilot, Mistral, more soon)
+4. #### Custom CSS themes
+
+| OS | Location of folder for CSS themes |
+|---|---|
+| Windows	| `C:\Users\{username}\AppData\Roaming\chatgpt-electron` |
+| macOS	| `/Users/{username}/Library/Application Support/chatgpt-electron` |
+| Linux	| `/home/{username}/.config/chatgpt-electron` |
+
+![sample](multi_ai.png)
+
+![sample](multi_sessions.png)
+
+![sample](themes.png)
 
 ## Requirements
 
 - [NodeJS](https://nodejs.org) v20 or +
-
-## Development
-
-Start project:
-
-```sh
-npm i
-npm install --save-dev electron-builder
-npm run build
-```
 
 ## Installation
 
@@ -23,7 +32,7 @@ npm run build
 npm i
 npm run package
 ```
-This will create a folder (ie: `out/chatgpt-electron-linux-x64`) which contains the executable file for Debian.
+This will create a folder (ie: `out/chatgpt-electron-linux-x64`) which contains the executable file for your system.
 
 You can directly run `out/chatgpt-electron-linux-x64/chatgpt-electron` or you may want to use it in a "widget":
 
@@ -43,7 +52,7 @@ You can directly run `out/chatgpt-electron-linux-x64/chatgpt-electron` or you ma
 
 1. Move the executable folder `out/chatgpt-electron-linux-x64` anywhere you like it
 
-2. run `chatgpt-electron-linux-x64/open_chatgpt` and enjoy!
+2. run `chatgpt-electron-linux-x64/chatgpt-electron` and enjoy!
 
 ### Panel shortcut in XFCE
 
@@ -76,4 +85,8 @@ It works with a `package` output and I did NOT tested it with deb and rpm.
 
 ## Credits
 
-This was made by [Wilson Hdn](https://www.hwilson.tech/).
+This was made by [Wilson Hdn](https://www.hwilson.tech/) for personal use with Debian 12 XFCE.
+
+Source is open because sharing is caring but I don't plan to spend time to maintain nor to update this project. 
+
+Thanks for your support!

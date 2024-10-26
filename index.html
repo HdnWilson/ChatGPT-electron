@@ -6,9 +6,29 @@
     <title>ChatGPT Electron</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: #000;
+            color: white;
+        }
+        #webview-container {
+            flex: 1; /* Prend tout l'espace disponible */
+        }
+        webview {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 
-<body style="background: black;">
+<body>
+    <!-- To change the page, go in main.js -->
 </body>
 
 </html>
